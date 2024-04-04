@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane stylesheets="@Pokedex.css" prefHeight="524.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pokedex.controller.PokedexController">
+    <children>
+        <ImageView fx:id="pokemonImageView" fitHeight="282.0" fitWidth="274.0" layoutX="247.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" />
+        <TextArea fx:id="descriptionTextArea" editable="false" layoutX="540.0" layoutY="50.0" prefHeight="215.0" prefWidth="197.0" promptText="Description" wrapText="true">
+            <cursor>
+                <Cursor fx:constant="NONE" />
+            </cursor>
+        </TextArea>
+        <ListView fx:id="pokemonListView" layoutX="14.0" layoutY="71.0" onMouseClicked="#onClickPokemon" prefHeight="362.0" prefWidth="206.0" />
+        <Text fx:id="pokemonListText" layoutX="18.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pokemon List" textAlignment="CENTER" />
+        <ListView fx:id="typeListView" layoutX="590.0" layoutY="276.0" prefHeight="65.0" prefWidth="147.0" />
+        <ListView fx:id="movesListView" layoutX="590.0" layoutY="346.0"  prefHeight="140.0" prefWidth="147.0" />
+        <Text fx:id="typeText" layoutX="546.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TYPE:" textAlignment="RIGHT" />
+        <Text fx:id="movesText" layoutX="532.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MOVES:" textAlignment="RIGHT" />
+    </children>
+</AnchorPane>

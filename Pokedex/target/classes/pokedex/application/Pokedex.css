@@ -1,0 +1,102 @@
+.root {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Courier New";
+    -fx-base: rgb(255, 204, 153); /* Light orange */
+    -fx-background: rgb(255, 153, 102); /* Dark orange */
+}
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #ff6666; /* Red */
+    -fx-opacity: 0.6;
+}
+
+#fancytext {
+    -fx-font: 35px Tahoma;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, #ff9900 0%, #ffdb4d 50%); /* Orange to yellow gradient */
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+
+#fancytext2 {
+    -fx-font: 25px Tahoma;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, #ff9900 0%, #ffdb4d 50%); /* Orange to yellow gradient */
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+
+#fancytext3 {
+    -fx-font: 20px Tahoma;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 200%, repeat, #ff9900 0%, #ffdb4d 50%); /* Orange to yellow gradient */
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #ff6666; /* Red */
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #ff9900; /* Orange */
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #ffffff; /* White */
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #ffcc66; /* Light orange */
+    -fx-text-fill: #ffffff; /* White */
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: #ff9900; /* Orange */
+    -fx-text-fill: #fffefa; /* White */
+}
+
+.button:focused {
+    -fx-border-color: #ff6666, #ff9900; /* Red, Orange */
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #ffcccc; /* Light red */
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff; /* White */
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #ff6666; /* Red */
+}
+
+.text-area {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#663300 0%, #ff9900 25%, #ffcc66 75%, #ffdb4d 100%); /* Dark orange to yellow gradient */
+    -fx-text-fill: #ffffff; /* White */
+}
+.list-cell { -fx-text-fill: black; }
+.list-cell:odd { -fx-background-color: #ff9900; /* Orange */ }
+.list-cell:even { -fx-background-color: #ffdb4d; /* Yellow */ }
+.list-cell:filled:hover {
+    -fx-background-color: #ffcccc; /* Light red */
+    -fx-text-fill: #ff6666; /* Red */
+}
